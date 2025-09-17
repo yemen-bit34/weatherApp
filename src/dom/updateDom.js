@@ -1,11 +1,5 @@
-export function processWeatherData(data) {
-  return {
-    city: data.resolvedAddress,
-    temp: data.currentConditions.temp,
-    conditions: data.currentConditions.conditions,
-  };
-}
-
+import { processWeatherData } from "../modules/processData";
+import { timeNow } from "../modules/timeFunction";
 export function updateDom(container, rawData) {
   // Clear any existing content
   container.innerHTML = "";
@@ -21,12 +15,13 @@ export function updateDom(container, rawData) {
         <div class="weather-icon">
             <span class="icon">☀️</span>
         </div>
-        <p class="small muted">Now</p>
+        <p class="small muted">${timeNow()}</p>
     </div>
     <div class="card-main">
         <h3 class="city">${data.city}</h3>
         <p class="temp">${data.temp}°C</p>
         <p class="cond">${data.conditions}</p>
+        <p>${data.description}</p>
     </div>
   `;
   container.appendChild(weatherCard);

@@ -1,7 +1,6 @@
-const API_KEY = "9W8BQCT4HK8KFSQXW4SLWXD7M";
-const UNIT_GROUP = "metric";
-const CONTENT_TYPE = "json";
-const cardsContainer = document.querySelector(".cards");
+const API_KEY = process.env.API_KEY;
+const UNIT_GROUP = process.env.UNIT_GROUP;
+const CONTENT_TYPE = process.env.CONTENT_TYPE;
 
 export async function getWeatherData(query) {
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${query}?unitGroup=${UNIT_GROUP}&key=${API_KEY}&contentType=${CONTENT_TYPE}`;
@@ -13,8 +12,7 @@ export async function getWeatherData(query) {
     }
     return await response.json();
   } catch (error) {
-    cardsContainer.innerHTML =
-      '<p class="empty">An error occurred. Please try again later.</p>';
+    console.log("erroooor :", error);
     return null;
   }
 }
