@@ -1,4 +1,4 @@
-.env
+env/
 styles/
 node_modules/
 dist/
