@@ -1,5 +1,5 @@
 {
-  "name": "webpack-practice",
+  "name": "weather-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,13 +11,20 @@
     "deploy": "gh-pages -d dist",
     "clean": "rm -rf dist/"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "weather",
+    "webpack",
+    "javascript",
+    "api",
+    "giphy"
+  ],
+  "author": "Al$haib",
   "license": "ISC",
-  "description": "",
+  "description": "A modern weather app with dynamic backgrounds using Visual Crossing Weather API and Giphy API",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "dotenv-webpack": "^8.1.1",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
