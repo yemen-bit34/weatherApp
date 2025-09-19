@@ -12,7 +12,7 @@ export async function getWeatherData(query) {
     }
     return await response.json();
   } catch (error) {
-    console.error("erroooor :", error);
+    console.error("errooooor :", error);
     return null;
   }
 }
