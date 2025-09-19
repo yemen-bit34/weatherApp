@@ -14,5 +14,10 @@ export function processWeatherData(data) {
     temp: data.currentConditions.temp,
     conditions: data.currentConditions.conditions,
     description: data.description,
+    humidity: data.currentConditions.humidity, // نسبة الرطوبة
+    windSpeed: data.currentConditions.windspeed, // سرعة الرياح
+    precip: data.currentConditions.precipprob || 0, // احتمالية الأمطار %
+    datetime: data.currentConditions.datetime, // Example: "09:00:00"
+    day: data.days && data.days[0]?.datetime, // Example: "2025-09-19"
   };
 }
