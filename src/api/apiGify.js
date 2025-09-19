@@ -1,7 +1,7 @@
 const API_KEY = process.env.SECOND_API_KEY;
 
 export async function getGify(keyword) {
-  const url = `https://api.giphy.com/v1/gifs/translate?api_key=${API_KEY}&s=${keyword}`;
+  const url = `https://api.giphy.com/v1/gifs/translate?api_key=${API_KEY}=${keyword}`;
 
   try {
     const response = await fetch(url, { mode: "cors" });
