@@ -25,7 +25,7 @@ A modern, responsive weather application built with vanilla JavaScript, featurin
 
 ## 🚀 Live Demo
 
-[View Live App](https://your-username.github.io/weather-app)
+[View Live App](https://yemen-bit34.github.io/weatherApp)
 
 ## 📦 Installation & Setup
 
@@ -159,7 +159,7 @@ This project is licensed under the ISC License.
 
 ## 👨‍💻 Author
 
-**Al$haib** - [GitHub Profile](https://github.com/your-username)
+**Al$haib** - [GitHub Profile](https://github.com/yemen-bit34)
 
 ---
 
